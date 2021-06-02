@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg>div{
+            color:white;
+            line-height: 60px;
+        }
+        .bg{
+            margin:0 auto;
+            /* width:630px; */
+            height:60px;
+            text-align: center;
+        }
+        .first{
+            height:60px;
+            background: red;
+        }
+        .second{
+            height:60px;
+            background: blue;
+        }
+        .third{
+            height:60px;
+            background:black;
+        }
+        .fourth{
+            height:60px;
+            background:orange;
+        }
+        @media screen and (min-width: 1200px) {
+            .first{
+                float:left;
+                width:25%;
+            }
+            .second{
+                float:left;
+                width:25%;
+            }
+            .third{
+                float:left;
+                width:25%;
+            }
+            .fourth{
+                float:left;
+                width:25%;
+            }
+        }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          
+            .first{
+                width:100%;
+                float:none;
+                clear: both;
+            }
+            .second{
+                float:left;           
+                width:33.33%;
+            }
+            .third{
+                float:left;            
+                width:33.33%;
+            }
+            .fourth{
+                float:left;
+                width:33.33%;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            
+            .first{
+                width:50%;
+                float:left;
+            }
+            .second{
+                float:right;
+                width:50%;
+            }
+            .third{
+                float:left;
+                width:50%;
+            }
+            .fourth{
+                float:right;
+                width:50%;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .bg div{
+                display:inline-block;
+                width:50%;
+                text-align:center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="first">1</div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+        <div class="fourth">4</div>
+    </div>
+</body>
+</html>
